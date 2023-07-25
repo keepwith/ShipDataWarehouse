@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ShipWebsite</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>jWeMy7ySfmMus6wyxsr4z0Nwbgo=2019/1/12 22:52:022019/1/12 22:49:23</TimeStamp>
+        <ID>
+          <String>Ship Website</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>2Xqvo+1DQYtg6C2ZuyRavdl3jA4=2019/1/12 13:14:302019/1/12 13:14:29</TimeStamp>
+        <ID>
+          <String>Ship Website</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jZKQVhFLfMGLZFZJVMSzfz7hdg8=2019/1/12 13:31:132019/1/12 13:30:46</TimeStamp>
+        <ID>
+          <String>Dim Arrival Region</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>C2htqbVYQCgLQ0uQAni4AJmRB3o=2019/1/12 13:41:312019/1/12 13:31:13</TimeStamp>
+        <ID>
+          <String>Dim Cargo Category</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AqRci3r2HaIiAHjPbaW3mUGsLAE=2019/1/12 13:31:552019/1/12 13:31:55</TimeStamp>
+        <ID>
+          <String>Dim Cargo Owner</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jaRV4FiMrsfpAWMjaSGqb6cSxG8=2019/1/12 13:32:532019/1/12 13:32:16</TimeStamp>
+        <ID>
+          <String>Dim Create Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ysLs5SPw5oZg+31XQKqdxsaqYSs=2019/1/12 13:33:102019/1/12 13:32:53</TimeStamp>
+        <ID>
+          <String>Dim Departure Region</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>320qHrpmGvmx1r9WPk6ZcYoiRd4=2019/1/12 13:33:262019/1/12 13:33:10</TimeStamp>
+        <ID>
+          <String>Dim Empty Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yRsybzz+IWNZofK8coWEk/j4Pr8=2019/1/12 13:33:262019/1/12 13:33:26</TimeStamp>
+        <ID>
+          <String>Dim Seal Requirement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TnmY/Mm0kvmb//3qz0cSv1OqQaI=2019/1/12 13:33:362019/1/12 13:33:36</TimeStamp>
+        <ID>
+          <String>Dim Ship</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BKhI2rr5yzaVpZ3GzCnN1GTHpSk=2019/1/12 13:35:422019/1/12 13:35:30</TimeStamp>
+        <ID>
+          <String>Dim Shipment Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ojSk2oBCLyaA2hN8AN9h0AiRqak=2019/1/13 15:13:242019/1/12 22:50:32N58lIemYflQ6PuHRmsS71RMMAbY=2019/1/13 12:15:272019/1/12 22:50:32</TimeStamp>
+        <ID>
+          <String>Ship Website</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>4ZZXQW1ayFmfSA+/03Dlg36gaJI=2019/1/12 13:13:262019/1/12 13:13:26</TimeStamp>
+      <ID>
+        <String>ShipWebsite</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-01-13T07:13:26.076667Z</LastDeployed>
+</DeploymentSnapshot>

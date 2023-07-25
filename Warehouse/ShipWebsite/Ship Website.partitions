@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="30acd31a-86c2-4eaf-a8bf-1f758caaa372" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Ship Website</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Cargo</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0fb19f37-5a92-41ce-9589-4ed136c2b993">
+          <ID>Fact Cargo</ID>
+          <Name>Fact Cargo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="52f5c8b8-5c88-4700-99b9-a007f33dc11a">
+            <DataSourceViewID>Ship Website</DataSourceViewID>
+            <TableID>dbo_FactCargo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Ship Schedule</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2e89a7cc-1300-40fa-936f-aecaa7f5e042">
+          <ID>Fact Ship Schedule</ID>
+          <Name>Fact Ship Schedule</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9c2e8637-0251-47f3-a8c0-37dcfff4fe82">
+            <DataSourceViewID>Ship Website</DataSourceViewID>
+            <TableID>dbo_FactShipSchedule</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Deal</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="259eb5b3-3dc5-46a5-8360-845f1fa90ac9">
+          <ID>Fact Deal</ID>
+          <Name>Fact Deal</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="82fc6a15-088f-465f-aced-7e8a78047e6c">
+            <DataSourceViewID>Ship Website</DataSourceViewID>
+            <TableID>dbo_FactDeal</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Ship</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f9f0662e-cd18-4bfa-a1f7-7b6821ca0f48">
+          <ID>Dim Ship</ID>
+          <Name>Dim Ship</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d64cc456-bf51-4cd1-9972-14cfc58ea8ba">
+            <DataSourceViewID>Ship Website</DataSourceViewID>
+            <TableID>dbo_DimShip</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
